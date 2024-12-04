@@ -2,8 +2,8 @@ import multer from "multer";
 import path from "path";
 
 const storage = multer.diskStorage({
-    destination: 'public/images/products', // Simplified destination path
-    filename: (req, file, cb) => cb(null, `${(file.originalname)}`) // Unique filename
+    destination: 'public/images/products',
+    filename: (req, file, cb) => cb(null, `${(file.originalname)}`)
   });
 
 
